@@ -37,3 +37,16 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 						
 						$form = false;
 ?>
+<div class="content">
+    <form action="script.php" method="post">
+        Please fill the following form to sign up:<br />
+        <div class="center">
+            <label for="username">Username</label><input type="text" name="username" value="<?php if(isset($_POST['username'])){echo htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');} ?>" /><br />
+            <label for="password">Password<span class="small">(6 characters min.)</span></label><input type="password" name="password" /><br />
+            <label for="passverif">Password<span class="small">(verification)</span></label><input type="password" name="passverif" /><br />
+            <label for="email">Email</label><input type="text" name="email" value="<?php if(isset($_POST['email'])){echo htmlentities($_POST['email'], ENT_QUOTES, 'UTF-8');} ?>" /><br />
+            <label for="avatar">Avatar<span class="small">(optional)</span></label><input type="text" name="avatar" value="<?php if(isset($_POST['avatar'])){echo htmlentities($_POST['avatar'], ENT_QUOTES, 'UTF-8');} ?>" /><br />
+            <input type="submit" value="Sign up" />
+		</div>
+    </form>
+</div>
