@@ -34,6 +34,6 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 					
 					if(mysql_query('insert into users(id, username, password, email, avatar, signup_date) values ('.$id.', "'.$username.'", "'.$password.'", "'.$email.'", "'.$avatar.'", "'.time().'")'))
 					{
-						//We dont display the form
+						
 						$form = false;
 ?>
