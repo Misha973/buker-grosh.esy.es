@@ -1,3 +1,3 @@
 buker-grosh.esy.es
 ==================
-Learning to HTML and PHP bu Buker & Misha9999777
+Learning to HTML and PHP by Buker & Misha9999777
